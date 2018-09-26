@@ -1,6 +1,6 @@
 # PDX Hvac Usage Report
 
-Make a call to [DarkSky.net](www.DarkSky.net) API with PDX coordinates. Select the month and it will make the request and return how many times PDX turned on the heat and/or AC for that given month in 2018.
+Make a call to [Dark Sky API](http://www.DarkSky.net) API with PDX coordinates. Select the month and it will make the request and return how many times PDX turned on the heat and/or AC for that given month in 2018.
 
 Example call:
 https://api.darksky.net/forecast/3fb92e5379153ca5c71c720e44c31167/37.8267,-122.4233
