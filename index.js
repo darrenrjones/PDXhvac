@@ -4,7 +4,7 @@ let url;
 if(location.hostname === 'localhost'){
   url = 'http://localhost:8088';
 } else {
-  url = 'https://darrenrjones.github.io/PDXhvac'
+  url = 'https://pdxhvac-server.herokuapp.com'
 }
 const acCount = document.getElementById('ac-count');
 const heatCount = document.getElementById('heat-count');
