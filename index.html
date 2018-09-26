@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>PDX DarkSky.net Weather</title>
+</head>
+
+<body>
+  <header>
+    <h1>Port of Portland HVAC System Statistics</h1>
+  </header>
+
+  <main>
+
+    <div class="select-container">
+      <select name="months-dropdown" id="months-dropdown">
+        <option value="null" selected="selected">Select a Month</option>
+        <option value="January">January '18</option>
+        <option value="February">February '18</option>
+        <option value="March">March '18</option>
+        <option value="April">April '18</option>
+        <option value="May">May '18</option>
+      </select>
+    </div>
+
+    <div class="main-info-container">
+      <div class="info-container">
+        <p>Air-Conditioning System turned on:</p>
+        <p class="temp-display"><span id="ac-count"></span> times </p>
+      </div>
+      <div class="info-container">
+        <p>Heating System turned on:</p>
+        <p class="temp-display"><span id="heat-count"></span> times </p>
+      </div>      
+    </div>
+
+  </main>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
