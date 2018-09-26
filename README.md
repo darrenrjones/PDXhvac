@@ -3,7 +3,7 @@
 Make a call to DarkSky.net API with PDX coordinates. Select the month and it will make the request and return how many times PDX turned on the heat and/or AC for that given month in 2018.
 
 Example call:
-https://api.darksky.net/forecast/APIKEYGOESHERE/45.5898,-122.5951,1533625200?exclude=currently,minutely,flags,daily
+https://api.darksky.net/forecast/3fb92e5379153ca5c71c720e44c31167/37.8267,-122.4233
 
 After request is made it is stored in LocalStorage to reduce needless API calls. 
 
