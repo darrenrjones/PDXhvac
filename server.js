@@ -5,6 +5,8 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const axios = require('axios');
+const { PORT } = require('./config');
+
 app.use(cors());
 
 const baseUrl = 'https://api.darksky.net/forecast/';
@@ -94,5 +96,15 @@ app.get('/month', (req, res) => {
   }
 });
 
-app.listen(8081);
+function runServer(port = PORT) {
+  const server = app
+    .listen(port, () => {
+      console.info(`App listening on port ${server.address().port}`);
+    })
+    .on('error', err => {
+      console.error('Express failed to start');
+      console.error(err);
+    });
+};
+runServer();
 module.exports = { app };
